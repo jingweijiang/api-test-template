@@ -1,0 +1,27 @@
+api:
+  base_url: "https://httpbin.org"
+  timeout: 10
+  retry_times: 3
+
+database:
+  mysql:
+    host: "mysql.cn.example.com"
+    port: 3306
+    user: "${MYSQL_USER}"
+    password: "${MYSQL_PASSWORD}"
+    database: "prod_db"
+    pool_size: 10
+    
+  mongodb:
+    host: "mongodb.cn.example.com"
+    port: 27017
+    database: "prod_db"
+    username: "${MONGO_USER}"
+    password: "${MONGO_PASSWORD}"
+    max_pool_size: 200
+
+redis:
+  host: "redis.cn.example.com"
+  port: 6379
+  db: 0
+  password: "${REDIS_PASSWORD}" 

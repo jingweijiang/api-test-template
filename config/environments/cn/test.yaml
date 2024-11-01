@@ -1,0 +1,35 @@
+api:
+  base_url: "https://httpbin.org"
+  timeout: 30
+  retry_times: 3
+
+database:
+  mysql:
+    host: "mysql.test.cn.example.com"
+    port: 3306
+    user: "test_user"
+    password: "test_password"
+    database: "test_db"
+    pool_size: 5
+    
+  mongodb:
+    host: "mongodb.test.cn.example.com"
+    port: 27017
+    database: "test_db"
+    username: "test_user"
+    password: "test_password"
+    max_pool_size: 100
+
+redis:
+  host: "redis.test.cn.example.com"
+  port: 6379
+  db: 0
+  password: "test_redis_password"
+
+test_accounts:
+  admin:
+    username: "admin_test"
+    password: "admin_password"
+  normal:
+    username: "user_test"
+    password: "user_password" 

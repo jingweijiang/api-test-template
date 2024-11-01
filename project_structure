@@ -1,0 +1,34 @@
+automation_framework/
+├── conftest.py                 # pytest配置文件
+├── pytest.ini                  # pytest全局配置
+├── requirements.txt            # 项目依赖
+├── config/
+│   ├── __init__.py
+│   ├── settings.py            # 全局配置管理
+│   └── environments/          # 环境配置文件
+│       ├── test.yaml
+│       └── prod.yaml
+├── core/
+│   ├── __init__.py
+│   ├── base_test.py          # 测试基类
+│   ├── logger.py             # 日志管理
+│   └── exceptions.py         # 自定义异常
+├── utils/
+│   ├── __init__.py
+│   ├── data_generator.py     # 测试数据生成
+│   ├── db_handler.py         # 数据库操作
+│   ├── cache_handler.py      # 缓存操作
+│   └── mock_server.py        # Mock服务
+├── clients/
+│   ├── __init__.py
+│   ├── http_client.py        # HTTP客户端
+│   ├── websocket_client.py   # WebSocket客户端
+│   └── grpc_client.py        # gRPC客户端
+└── tests/
+    ├── __init__.py
+    ├── test_data/           # 测试数据
+    │   ├── api_data.yaml
+    │   └── db_data.json
+    └── api/                 # 测试用例
+        ├── __init__.py
+        └── test_example.py 
